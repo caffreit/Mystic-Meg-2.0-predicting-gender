@@ -4,6 +4,7 @@ First we use pairplot from Seaborn
 It seems it should be possible to separate both genders. It seems like Age, Finish Position, Total Runs and Time are important.
 Both Gen_Pos (Gender Position) and [Age_Grade](https://support.parkrun.com/hc/en-us/articles/200565263-What-is-age-grading-) have gender built into them. This is useful but makes the problem trivial. So we'll leave them both out.
 
+*__This post needs explanatory text and formatting*__
 
 ```python
 import pandas as pd
