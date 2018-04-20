@@ -1377,7 +1377,7 @@ Seems to say that Position, Time, Age and Total Runs are the important variables
 # Conclusion:
 So that's it for another post. We looked at several methods for predicting the gender of a runner from the Postion, Finish Time etc. We optimised the hyperparameters of each. 
 
-The Random Forest method was found to be the most successful. We gave it a lot more data and managed to get a score of 0.84 for Precision, Recall and the F1-score. We then tested the optimised model against holdout data and found scores of 0.81.
+The Random Forest method was found to be the most successful. We gave it a lot more data and managed to get a score of **0.84** for Precision, Recall and the F1-score. We then tested the optimised model against holdout data and found scores of **0.81**.
 
 In a future post we will apply this method to predicting membership of a club.
 
