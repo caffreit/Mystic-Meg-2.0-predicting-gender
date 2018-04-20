@@ -5,7 +5,7 @@
 
 In a previous post I compared Males and Females, I showed that there are clear differences in the finish time and position. Given this it should be possible to use these features to predict the Gender of an athlete.
 
-Both Gen_Pos (Gender Position) and Age_Grade (https://support.parkrun.com/hc/en-us/articles/200565263-What-is-age-grading-) have gender built into them. This is useful but makes the problem trivial. So we'll leave them both out.
+Both Gen_Pos (Gender Position) and [Age_Grade](https://support.parkrun.com/hc/en-us/articles/200565263-What-is-age-grading-) have gender built into them. This is useful but makes the problem trivial. So we'll leave them both out.
 
 I'll first walk through recoding and normalising the data. Then I'll select the features we want to focus on. I'm going to demonstrate several Machine Learning (ML) techniques as well optimise their hyperparameters.
 
