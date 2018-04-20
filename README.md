@@ -74,19 +74,7 @@ data.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -227,19 +215,7 @@ df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -315,7 +291,6 @@ y = df['Gender_Coded']
 ```
 
 # Machine Learning
-### explain each of these techniques
 ### Importing some useful functions for; splitting, validation and optimisation.
 
 The dataset is split into training and testing sets so that we can validate the performance of the models on data it has not yet seen.
@@ -329,10 +304,7 @@ from sklearn.grid_search import GridSearchCV
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 ```
 
-    C:\ProgramData\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
-      "This module will be removed in 0.20.", DeprecationWarning)
-    C:\ProgramData\Anaconda2\lib\site-packages\sklearn\grid_search.py:43: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. This module will be removed in 0.20.
-      DeprecationWarning)
+
     
 
 ## First up is Support Vector Machine. 
@@ -1289,7 +1261,6 @@ print feature_importances
 
 # K Means Clustering
 This is an unsupervised technique. We have labels so we can check<br> the performance of the method.
-### how does this work.
 
 
 ```python
@@ -1359,8 +1330,6 @@ print(classification_report(df1['Gender_Coded'],kmeans.labels_))
     
 
 # PCA, Principal Component Analysis
-## what is PCA
-
 
 ```python
 from sklearn.decomposition import PCA
@@ -1385,7 +1354,6 @@ plt.ylabel('Second Principal Component')
 
 
 
-    <matplotlib.text.Text at 0x284ff2b0>
 
 
 
@@ -1404,7 +1372,7 @@ sns.heatmap(df_comp,cmap='plasma',)
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x28678e80>
+
 
 
 
@@ -1423,7 +1391,3 @@ In a future post we will apply this method to predicting membership of a club.
 
 We might also do some feature engineering to see if we can improve the prediction ability of our models.
 
-
-```python
-
-```
