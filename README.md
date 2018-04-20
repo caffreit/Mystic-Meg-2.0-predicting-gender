@@ -859,14 +859,6 @@ grid_search.fit(X_train,y_train)
 grid_search.best_params_
 ```
 
-    Fitting 3 folds for each of 54 candidates, totalling 162 fits
-    
-
-    [Parallel(n_jobs=2)]: Done  37 tasks      | elapsed:  3.6min
-    [Parallel(n_jobs=2)]: Done 158 tasks      | elapsed: 15.0min
-    [Parallel(n_jobs=2)]: Done 162 out of 162 | elapsed: 15.4min finished
-    
-
 
 
 
