@@ -353,14 +353,6 @@ grid.fit(X_train,y_train)
 
 
 
-    GridSearchCV(cv=None, error_score='raise',
-           estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
-      decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
-      max_iter=-1, probability=False, random_state=None, shrinking=True,
-      tol=0.001, verbose=False),
-           fit_params={}, iid=True, n_jobs=1,
-           param_grid={'C': [100, 1000, 10000], 'gamma': [1, 0.1, 0.01]},
-           pre_dispatch='2*n_jobs', refit=True, scoring=None, verbose=0)
 
 
 
@@ -453,16 +445,7 @@ gs.fit(X_train,y_train)
 
 
 
-    GridSearchCV(cv=5, error_score='raise',
-           estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-              intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
-              penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
-              verbose=0, warm_start=False),
-           fit_params={}, iid=True, n_jobs=1,
-           param_grid={'penalty': ['l1', 'l2'], 'C': array([  1.00000e+00,   2.78256e+00,   7.74264e+00,   2.15443e+01,
-             5.99484e+01,   1.66810e+02,   4.64159e+02,   1.29155e+03,
-             3.59381e+03,   1.00000e+04])},
-           pre_dispatch='2*n_jobs', refit=True, scoring=None, verbose=0)
+
 
 
 
@@ -782,18 +765,6 @@ rf_random.fit(X_train,y_train)
 
 
 
-
-    RandomizedSearchCV(cv=3, error_score='raise',
-              estimator=RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
-                max_depth=None, max_features='auto', max_leaf_nodes=None,
-                min_impurity_split=1e-07, min_samples_leaf=1,
-                min_samples_split=2, min_weight_fraction_leaf=0.0,
-                n_estimators=200, n_jobs=1, oob_score=False, random_state=None,
-                verbose=0, warm_start=False),
-              fit_params={}, iid=True, n_iter=50, n_jobs=2,
-              param_distributions={'bootstrap': [True, False], 'min_samples_leaf': [1, 2, 4], 'n_estimators': [100, 575, 1050, 1525, 2000], 'min_samples_split': [5, 10], 'max_features': ['auto'], 'max_depth': [5, 10, 15, 20, 25, None]},
-              pre_dispatch='2*n_jobs', random_state=42, refit=True,
-              return_train_score=True, scoring=None, verbose=0)
 
 
 
