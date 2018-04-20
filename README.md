@@ -1036,16 +1036,7 @@ print(classification_report(y_test,rfc_preds))
     
 
 
-```python
-rfc = RandomForestClassifier(n_estimators=1500, max_depth=15, max_features='auto', 
-                             min_samples_leaf=1, min_samples_split=8) ### ad in the good parmas
-rfc.fit(X_train,y_train)
-rfc_preds = rfc.predict(X_test)
 
-print(confusion_matrix(y_test,rfc_preds))
-print('\n')
-print(classification_report(y_test,rfc_preds))
-```
 
 Good improvement. If I had a more powerful machine I'd do a more complete GridSearch and try to bring the number of estimators down to improve prediction speed.
 
